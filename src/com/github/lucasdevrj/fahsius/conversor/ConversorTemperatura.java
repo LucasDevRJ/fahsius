@@ -34,7 +34,11 @@ public class ConversorTemperatura {
 	}
 
 	public void converteFahrenheitParaCelsius() {
+		System.out.print("\nDigite o valor em Fahrenheit: ");
+		this.temperatura = entrada.nextDouble();
 		
+		double conversao = (this.temperatura - 32.0) * 5 / 9;
+		System.out.println("O valor convertido de Fahrenheit para Celsius é " + String.format("%.2f", conversao) + "°C");
 	}
 
 	public double getTemperatura() {
