@@ -25,3 +25,11 @@ Programa interativo de um sistema que converte Fahrenheit para Celsius, Fahrenhe
 2. Baixe o <a href="https://github.com/LucasDevRJ/fahsius/archive/refs/heads/master.zip" >projeto<a/>;
 3. Insira a pasta do projeto na IDE;
 4. Pronto! Agora pode usar e editar o projeto.
+
+## Tecnologias Usadas
+- `Java`
+- `Eclipse`
+
+## Autores
+
+[<img src="https://avatars.githubusercontent.com/u/95040236?v=4" width=115><br><sub>Lucas Pereira de Lima</sub>](https://github.com/LucasDevRJ)
