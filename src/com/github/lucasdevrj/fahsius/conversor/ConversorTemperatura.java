@@ -48,7 +48,13 @@ public class ConversorTemperatura {
 	}
 	
 	public void converteFahrenheitParaKelvin() {
+		System.out.println("\n----------|Fahrenheit para Kelvin|----------");
+		System.out.print("Digite o valor em Fahrenheit: ");
+		this.temperatura = entrada.nextDouble();
 		
+		double conversao = (this.temperatura - 32.0) * 5 / 9 + 273.15;
+		System.out.println("O valor convertido de Fahrenheit para Kelvin é " + String.format("%.2f", conversao) + "K");
+		System.out.println("---------------------------------------------");
 	}
 
 	public double getTemperatura() {
