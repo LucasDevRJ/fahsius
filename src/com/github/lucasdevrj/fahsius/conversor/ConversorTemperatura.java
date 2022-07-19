@@ -21,6 +21,7 @@ public class ConversorTemperatura {
 		System.out.println("4 - Celsius para Kelvin.");
 		System.out.println("5 - Kelvin para Fahrenheit.");
 		System.out.println("6 - Kelvin para Celsius.");
+		System.out.println("7 - Sair.");
 		System.out.println("-------------------------------");
 		
 		System.out.print("Digite sua opção desejada: ");
@@ -33,6 +34,10 @@ public class ConversorTemperatura {
 			
 			case 2:
 				converteFahrenheitParaKelvin();
+			break;
+			
+			case 7:
+				finalizarPrograma();
 			break;
 		}
 	}
@@ -54,7 +59,10 @@ public class ConversorTemperatura {
 		if (opcao == 1) {
 			escolhaTemperatura();
 		} else if (opcao == 2) {
-			//chamar o método de Sair.
+			finalizarPrograma();
+		} else {
+			System.out.println("Opção inválida!");
+			converteFahrenheitParaCelsius();
 		}
 	}
 	
@@ -66,6 +74,10 @@ public class ConversorTemperatura {
 		double conversao = (this.temperatura - 32.0) * 5 / 9 + 273.15;
 		System.out.println("O valor convertido de Fahrenheit para Kelvin é " + String.format("%.2f", conversao) + "K");
 		System.out.println("---------------------------------------------");
+	}
+	
+	public void finalizarPrograma() {
+		System.out.println("Programa finalizado!");
 	}
 
 	public double getTemperatura() {
