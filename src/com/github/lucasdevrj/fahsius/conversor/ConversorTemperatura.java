@@ -45,6 +45,17 @@ public class ConversorTemperatura {
 		double conversao = (this.temperatura - 32.0) * 5 / 9;
 		System.out.println("O valor convertido de Fahrenheit para Celsius é " + String.format("%.2f", conversao) + "°C");
 		System.out.println("---------------------------------------------");
+		System.out.println("Deseja fazer uma nova conversão?");
+		System.out.println("Opção 1 - Sim.");
+		System.out.println("Opção 2 - Não.");
+		System.out.print("Digite sua opção: ");
+		int opcao = entrada.nextInt();
+		
+		if (opcao == 1) {
+			escolhaTemperatura();
+		} else if (opcao == 2) {
+			//chamar o método de Sair.
+		}
 	}
 	
 	public void converteFahrenheitParaKelvin() {
