@@ -44,6 +44,10 @@ public class ConversorTemperatura {
 				converteCelsiusParaKelvin();
 			break;
 			
+			case 5:
+				converteKelvinParaFahreinheit();
+			break;
+			
 			case 7:
 				finalizarPrograma();
 			break;
@@ -132,6 +136,31 @@ public class ConversorTemperatura {
 		
 		double conversao = this.temperatura + 273.15;
 		System.out.println("O valor convertido de Celsius para Kelvin é " + String.format("%.2f", conversao) + "K");
+		System.out.println("---------------------------------------------");
+		
+		System.out.println("\nDeseja fazer uma nova conversão?");
+		System.out.println("Opção 1 - Sim.");
+		System.out.println("Opção 2 - Não.");
+		System.out.print("Digite sua opção: ");
+		int opcao = entrada.nextInt();
+		
+		if (opcao == 1) {
+			escolhaTemperatura();
+		} else if (opcao == 2) {
+			finalizarPrograma();
+		} else {
+			System.out.println("Opção inválida!");
+			converteFahrenheitParaCelsius();
+		}
+	}
+	
+	public void converteKelvinParaFahreinheit() {
+		System.out.println("\n----------|Kelvin para Fahrenheit|----------");
+		System.out.print("Digite o valor em Kelvin: ");
+		this.temperatura = entrada.nextDouble();
+		
+		double conversao = (this.temperatura - 273.15) * 9 / 5 + 32.0;
+		System.out.println("O valor convertido de Kelvin para Fahrenheit é " + String.format("%.2f", conversao) + "K");
 		System.out.println("---------------------------------------------");
 		
 		System.out.println("\nDeseja fazer uma nova conversão?");
