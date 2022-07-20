@@ -40,6 +40,10 @@ public class ConversorTemperatura {
 				converteCelsiusParaFahrenheit();
 			break;
 			
+			case 4:
+				converteCelsiusParaKelvin();
+			break;
+			
 			case 7:
 				finalizarPrograma();
 			break;
@@ -119,6 +123,10 @@ public class ConversorTemperatura {
 			System.out.println("Opção inválida!");
 			converteFahrenheitParaCelsius();
 		}
+	}
+	
+	public void converteCelsiusParaKelvin() {
+		
 	}
 	
 	public void finalizarPrograma() {
