@@ -55,6 +55,11 @@ public class ConversorTemperatura {
 			case 7:
 				finalizarPrograma();
 			break;
+			
+			default:
+				System.out.println("\nDigito inválido!");
+				escolhaTemperatura();
+			break;
 		}
 	}
 
