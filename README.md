@@ -6,7 +6,7 @@
 
 Programa interativo de um sistema que converte Fahrenheit para Celsius, Fahrenheit para Kelvin, Celsius para Fahrenheit, Celsius para Kelvin, Kelvin para Fahreinheit e Kelvin para Celsius. O sistema solicita o valor para o usuário e devolve a conversão.
 
-![Fahsius gif](../fahsius/imagens/fahsius.gif)
+![fahsius-print01](https://user-images.githubusercontent.com/95040236/180104242-f058caab-8815-410c-a2de-b08412cdf0a8.png)
 
 ![Badge - Status](https://img.shields.io/badge/Status-Desenvolvimento-brightgreen)
 
