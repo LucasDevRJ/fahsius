@@ -14,7 +14,7 @@ public class ConversorTemperatura {
 	}
 	
 	public void escolhaTemperatura() {
-		System.out.println("\n----------|Conversões|----------");
+		System.out.println("\n----------|ConversÃµes|----------");
 		System.out.println("1 - Fahrenheit para Celsius.");
 		System.out.println("2 - Fahrenheit para Kelvin.");
 		System.out.println("3 - Celsius para Fahrenheit.");
@@ -24,7 +24,7 @@ public class ConversorTemperatura {
 		System.out.println("7 - Sair.");
 		System.out.println("-------------------------------");
 		
-		System.out.print("Digite sua opção desejada: ");
+		System.out.print("Digite sua opÃ§Ã£o desejada: ");
 		int opcao = entrada.nextInt();
 		
 		switch (opcao) {
@@ -57,7 +57,7 @@ public class ConversorTemperatura {
 			break;
 			
 			default:
-				System.out.println("\nDigito inválido!");
+				System.out.println("\nDigito invï¿½lido!");
 				escolhaTemperatura();
 			break;
 		}
@@ -69,13 +69,13 @@ public class ConversorTemperatura {
 		this.temperatura = entrada.nextDouble();
 		
 		double conversao = (this.temperatura - 32.0) * 5 / 9;
-		System.out.println("O valor convertido de Fahrenheit para Celsius é " + String.format("%.2f", conversao) + "°C");
+		System.out.println("O valor convertido de Fahrenheit para Celsius ï¿½ " + String.format("%.2f", conversao) + "ï¿½C");
 		System.out.println("---------------------------------------------");
 		
-		System.out.println("\nDeseja fazer uma nova conversão?");
-		System.out.println("Opção 1 - Sim.");
-		System.out.println("Opção 2 - Não.");
-		System.out.print("Digite sua opção: ");
+		System.out.println("\nDeseja fazer uma nova conversï¿½o?");
+		System.out.println("Opï¿½ï¿½o 1 - Sim.");
+		System.out.println("Opï¿½ï¿½o 2 - Nï¿½o.");
+		System.out.print("Digite sua opï¿½ï¿½o: ");
 		int opcao = entrada.nextInt();
 		
 		if (opcao == 1) {
@@ -83,7 +83,7 @@ public class ConversorTemperatura {
 		} else if (opcao == 2) {
 			finalizarPrograma();
 		} else {
-			System.out.println("Opção inválida!");
+			System.out.println("Opï¿½ï¿½o invï¿½lida!");
 			converteFahrenheitParaCelsius();
 		}
 	}
@@ -94,13 +94,13 @@ public class ConversorTemperatura {
 		this.temperatura = entrada.nextDouble();
 		
 		double conversao = (this.temperatura - 32.0) * 5 / 9 + 273.15;
-		System.out.println("O valor convertido de Fahrenheit para Kelvin é " + String.format("%.2f", conversao) + "K");
+		System.out.println("O valor convertido de Fahrenheit para Kelvin ï¿½ " + String.format("%.2f", conversao) + "K");
 		System.out.println("---------------------------------------------");
 		
-		System.out.println("\nDeseja fazer uma nova conversão?");
-		System.out.println("Opção 1 - Sim.");
-		System.out.println("Opção 2 - Não.");
-		System.out.print("Digite sua opção: ");
+		System.out.println("\nDeseja fazer uma nova conversï¿½o?");
+		System.out.println("Opï¿½ï¿½o 1 - Sim.");
+		System.out.println("Opï¿½ï¿½o 2 - Nï¿½o.");
+		System.out.print("Digite sua opï¿½ï¿½o: ");
 		int opcao = entrada.nextInt();
 		
 		if (opcao == 1) {
@@ -108,7 +108,7 @@ public class ConversorTemperatura {
 		} else if (opcao == 2) {
 			finalizarPrograma();
 		} else {
-			System.out.println("Opção inválida!");
+			System.out.println("Opï¿½ï¿½o invï¿½lida!");
 			converteFahrenheitParaCelsius();
 		}
 	}
@@ -119,13 +119,13 @@ public class ConversorTemperatura {
 		this.temperatura = entrada.nextDouble();
 		
 		double conversao = (this.temperatura * 9 / 5) + 32.0;
-		System.out.println("O valor convertido de Celsius para Fahrenheit é " + String.format("%.2f", conversao) + "°F");
+		System.out.println("O valor convertido de Celsius para Fahrenheit ï¿½ " + String.format("%.2f", conversao) + "ï¿½F");
 		System.out.println("---------------------------------------------");
 		
-		System.out.println("\nDeseja fazer uma nova conversão?");
-		System.out.println("Opção 1 - Sim.");
-		System.out.println("Opção 2 - Não.");
-		System.out.print("Digite sua opção: ");
+		System.out.println("\nDeseja fazer uma nova conversï¿½o?");
+		System.out.println("Opï¿½ï¿½o 1 - Sim.");
+		System.out.println("Opï¿½ï¿½o 2 - Nï¿½o.");
+		System.out.print("Digite sua opï¿½ï¿½o: ");
 		int opcao = entrada.nextInt();
 		
 		if (opcao == 1) {
@@ -133,7 +133,7 @@ public class ConversorTemperatura {
 		} else if (opcao == 2) {
 			finalizarPrograma();
 		} else {
-			System.out.println("Opção inválida!");
+			System.out.println("Opï¿½ï¿½o invï¿½lida!");
 			converteFahrenheitParaCelsius();
 		}
 	}
@@ -144,13 +144,13 @@ public class ConversorTemperatura {
 		this.temperatura = entrada.nextDouble();
 		
 		double conversao = this.temperatura + 273.15;
-		System.out.println("O valor convertido de Celsius para Kelvin é " + String.format("%.2f", conversao) + "K");
+		System.out.println("O valor convertido de Celsius para Kelvin ï¿½ " + String.format("%.2f", conversao) + "K");
 		System.out.println("---------------------------------------------");
 		
-		System.out.println("\nDeseja fazer uma nova conversão?");
-		System.out.println("Opção 1 - Sim.");
-		System.out.println("Opção 2 - Não.");
-		System.out.print("Digite sua opção: ");
+		System.out.println("\nDeseja fazer uma nova conversï¿½o?");
+		System.out.println("Opï¿½ï¿½o 1 - Sim.");
+		System.out.println("Opï¿½ï¿½o 2 - Nï¿½o.");
+		System.out.print("Digite sua opï¿½ï¿½o: ");
 		int opcao = entrada.nextInt();
 		
 		if (opcao == 1) {
@@ -158,7 +158,7 @@ public class ConversorTemperatura {
 		} else if (opcao == 2) {
 			finalizarPrograma();
 		} else {
-			System.out.println("Opção inválida!");
+			System.out.println("Opï¿½ï¿½o invï¿½lida!");
 			converteFahrenheitParaCelsius();
 		}
 	}
@@ -169,13 +169,13 @@ public class ConversorTemperatura {
 		this.temperatura = entrada.nextDouble();
 		
 		double conversao = (this.temperatura - 273.15) * 9 / 5 + 32.0;
-		System.out.println("O valor convertido de Kelvin para Fahrenheit é " + String.format("%.2f", conversao) + "K");
+		System.out.println("O valor convertido de Kelvin para Fahrenheit ï¿½ " + String.format("%.2f", conversao) + "K");
 		System.out.println("---------------------------------------------");
 		
-		System.out.println("\nDeseja fazer uma nova conversão?");
-		System.out.println("Opção 1 - Sim.");
-		System.out.println("Opção 2 - Não.");
-		System.out.print("Digite sua opção: ");
+		System.out.println("\nDeseja fazer uma nova conversï¿½o?");
+		System.out.println("Opï¿½ï¿½o 1 - Sim.");
+		System.out.println("Opï¿½ï¿½o 2 - Nï¿½o.");
+		System.out.print("Digite sua opï¿½ï¿½o: ");
 		int opcao = entrada.nextInt();
 		
 		if (opcao == 1) {
@@ -183,7 +183,7 @@ public class ConversorTemperatura {
 		} else if (opcao == 2) {
 			finalizarPrograma();
 		} else {
-			System.out.println("Opção inválida!");
+			System.out.println("Opï¿½ï¿½o invï¿½lida!");
 			converteFahrenheitParaCelsius();
 		}
 	}
@@ -194,13 +194,13 @@ public class ConversorTemperatura {
 		this.temperatura = entrada.nextDouble();
 		
 		double conversao = this.temperatura - 273.15;
-		System.out.println("O valor convertido de Kelvin para Celsius é " + String.format("%.2f", conversao) + "°C");
+		System.out.println("O valor convertido de Kelvin para Celsius ï¿½ " + String.format("%.2f", conversao) + "ï¿½C");
 		System.out.println("---------------------------------------------");
 		
-		System.out.println("\nDeseja fazer uma nova conversão?");
-		System.out.println("Opção 1 - Sim.");
-		System.out.println("Opção 2 - Não.");
-		System.out.print("Digite sua opção: ");
+		System.out.println("\nDeseja fazer uma nova conversï¿½o?");
+		System.out.println("Opï¿½ï¿½o 1 - Sim.");
+		System.out.println("Opï¿½ï¿½o 2 - Nï¿½o.");
+		System.out.print("Digite sua opï¿½ï¿½o: ");
 		int opcao = entrada.nextInt();
 		
 		if (opcao == 1) {
@@ -208,7 +208,7 @@ public class ConversorTemperatura {
 		} else if (opcao == 2) {
 			finalizarPrograma();
 		} else {
-			System.out.println("Opção inválida!");
+			System.out.println("Opï¿½ï¿½o invï¿½lida!");
 			converteFahrenheitParaCelsius();
 		}
 	}
